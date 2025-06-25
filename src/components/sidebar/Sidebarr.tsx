@@ -1,5 +1,7 @@
 import { roboto } from "@/app/layout";
 import React from "react";
+import { Players } from "./Players";
+
 const players = ["Global", "Myrwin", "Elyoya", "Jojo", "Alvaro", "Supa"];
 
 export const Sidebarr = () => {
@@ -14,7 +16,7 @@ export const Sidebarr = () => {
           />
         </header>
 
-        <main className=" gap-10 flex flex-col text-white items-center mt-16 font bold basis-1">
+        <main className=" gap-10 flex flex-col text-white items-center mt-16 font  basis-1">
           {players.map((players) => {
             return (
               <div
@@ -38,8 +40,10 @@ export const Sidebarr = () => {
                 </svg>
                 <p>{players}</p>
               </div>
+
             );
           })}
+          <Players/>
         </main>
       </div>
     </div>
